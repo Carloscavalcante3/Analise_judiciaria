@@ -2,6 +2,8 @@
 
 Este projeto é um case de Data Science que tem como objetivo analisar dados de processos judiciais obtidos por meio da API Pública do DataJud, disponibilizada pelo Conselho Nacional de Justiça (CNJ) para extrair insights sobre a volumetria e a duração de diferentes classes de processos no Tribunal de Justiça de Pernambuco (TJPE).
 
+<img width="6600" height="1800" alt="Image" src="https://github.com/user-attachments/assets/7de91c2d-5c73-4b51-8a75-ef651dd323ed" />
+
 ## Objetivo
 - Realizar a ingestão de dados judiciais via **API REST** utilizando **Python** e a biblioteca **requests**.
 - Aplicar técnicas de pré-processamento e engenharia de atributos com pandas para calcular métricas de duração.
