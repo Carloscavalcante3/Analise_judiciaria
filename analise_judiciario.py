@@ -11,8 +11,6 @@ df['data_fim'] = pd.to_datetime(df['data_fim'], errors='coerce', utc=True).dt.tz
 
 hoje = pd.Timestamp.now().normalize()
 df['data_fim'] = df['data_fim'].fillna(hoje)
-
-# Calcular duração em dias
 df['duracao'] = (df['data_fim'] - df['data_inicio']).dt.days
 
 processos_por_classe = df['classe'].value_counts()
@@ -32,7 +30,6 @@ axes[0].set_ylabel("Quantidade", fontsize=12)
 axes[0].tick_params(axis="x", rotation=45)
 plt.setp(axes[0].get_xticklabels(), ha="right")
 
-
 #Gráfico 2: Duração X Classe
 sns.barplot(x=duracao_media.index, y=duracao_media.values, palette="mako", ax=axes[1], hue=duracao_media.index, legend=False)
 axes[1].set_title("Duração Média por Classe (dias)", fontsize=14)
@@ -40,7 +37,6 @@ axes[1].set_xlabel("Classe", fontsize=12)
 axes[1].set_ylabel("Duração Média (dias)", fontsize=12)
 axes[1].tick_params(axis="x", rotation=45)
 plt.setp(axes[1].get_xticklabels(), ha="right")
-
 
 # Gráfico 3: Asssuntos tratados
 sns.barplot(x=processos_por_assunto.values, y=processos_por_assunto.index, palette="crest", ax=axes[2], hue=processos_por_assunto.index, legend=False)
