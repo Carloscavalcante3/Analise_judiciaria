@@ -14,6 +14,14 @@ Este projeto é um case de Data Science que tem como objetivo analisar dados de 
 
 > Este projeto é uma forma de observar **aplicações de dados na área jurídica**, combinando análise de dados e desenvolvimento Python de forma prática.
 
+## Tecnologias Utilizadas
+- Python
+- pandas
+- matplotlib
+- seaborn
+- requests
+- json
+
 ## Estrutura do Repositório
 ```
 ├── api_tjpe.py             # Script de ingestão de dados via API
@@ -31,15 +39,7 @@ Este projeto é um case de Data Science que tem como objetivo analisar dados de 
 3. Substitua a chave antiga no código pelo seu token de acesso caso necessário.
 4. Execute o script:
 ```python api_tjpe.py```
-Este script irá se conectar à API e criar o arquivo bd.csv com os dados dos processos.
+> Este script irá se conectar à API e criar o arquivo bd.csv com os dados dos processos.
 5. Execute o script:
 ```python analise_judiciario.py```
-Este script irá ler o bd.csv, processar os dados e gerar a imagem analise_judiciaria.png com o dashboard final.
-
-## Tecnologias Utilizadas
-- Python
-- pandas
-- matplotlib
-- seaborn
-- requests
-- json
+> Este script irá ler o bd.csv, processar os dados e gerar a imagem analise_judiciaria.png com o dashboard final.
