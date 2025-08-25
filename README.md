@@ -15,13 +15,13 @@ Este projeto é um case de Data Science que tem como objetivo analisar dados de 
 > Este projeto é uma forma de observar **aplicações de dados na área jurídica**, combinando análise de dados e desenvolvimento Python de forma prática.
 
 ## Estrutura do Repositório
-
+```
 ├── api_tjpe.py             # Script de ingestão de dados via API
 ├── analise_judiciario.py   # Script para EDA e visualização
 ├── bd.csv                  # Dados brutos (gerado por api_tjpe.py)
 ├── analise_judiciaria.png  # Dashboard com os resultados (gerado por analise_judiciario.py)
 └── README.md               # Documentação do projeto
-
+```
 ## Como Executar
 1. Instale as dependências:
 
